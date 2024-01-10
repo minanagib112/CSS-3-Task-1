@@ -1,0 +1,71 @@
+div{
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+}
+.stark {
+    width: 100%;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.stark:hover {
+    opacity: 0;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: #0a0a23;
+    margin-top: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
+
+button:hover {
+    animation: blink 1s infinite linear;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+@keyframes blink {
+    0% {
+    background-color: #0a0a23;
+    
+    }
+    33% {
+    background-color: red;
+    }
+    66% {
+    background-color: green;
+    }
+    100% {
+    background-color: blue;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Open+Sans:wght@400;700&family=Rubik+Doodle+Shadow&display=swap');
+
+.text-shadow{
+    margin-top: 200px;
+    font-family: 'Rubik Doodle Shadow', cursive;
+    position: relative;
+    text-align: center;
+}
+.text-shadow img{
+    width: 100%;
+    height: 100%;
+}
+
+.text-shadow p{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: white;
+    text-shadow: 4px 1px 20px rgba(128, 0, 0, 1);}
